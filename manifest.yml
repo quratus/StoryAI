@@ -1,0 +1,11 @@
+modules:
+  jira:issuePanel:
+    - key: storyai-hello-world-panel
+      function: main
+      title: StoryAI
+      icon: https://developer.atlassian.com/platform/forge/images/icons/issue-panel-icon.svg
+  function:
+    - key: main
+      handler: index.run
+app:
+  id: ari:cloud:ecosystem::app/2df52644-e196-4b38-a9d1-dcb11f50cdb5
