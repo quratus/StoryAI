@@ -13,8 +13,12 @@
     "eslint-plugin-react-hooks": "^4.2.0"
   },
   "dependencies": {
-    "@forge/api": "^2.9.1",
+    "@forge/api": "^2.10.0",
     "@forge/ui": "^1.5.0",
-    "@forge/ui-jira": "^7.0.2"
+    "@forge/ui-jira": "^8.0.0",
+    "axios": "^1.2.5",
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
+    "openai": "^3.1.0"
   }
 }
