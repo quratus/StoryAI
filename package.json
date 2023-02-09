@@ -5,7 +5,8 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "lint": "./node_modules/.bin/eslint src/**/* || npm run --silent hook-errors",
+    "start": "node index.js & node openai-backend.js",
+    "lint": "eslint src/**/* || npm run --silent hook-errors",
     "hook-errors": "echo '\\x1b[31mThe build failed because a Forge UI hook is being used incorrectly. Forge UI hooks follow the same rules as React Hooks but have their own API definitions. See the Forge documentation for details on how to use Forge UI hooks.\n' && exit 1"
   },
   "devDependencies": {
@@ -16,9 +17,12 @@
     "@forge/api": "^2.10.0",
     "@forge/ui": "^1.5.0",
     "@forge/ui-jira": "^8.0.0",
-    "axios": "^1.2.5",
+    "axios": "^1.3.2",
     "body-parser": "^1.20.1",
     "express": "^4.18.2",
+    "https": "^1.0.0",
     "openai": "^3.1.0"
-  }
+  },
+  "description": "This Porject uses the openai text generation to write user stories",
+  "author": ""
 }

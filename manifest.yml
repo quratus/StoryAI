@@ -7,9 +7,20 @@ modules:
   function:
     - key: main
       handler: index.run
+ 
 app:
   id: ari:cloud:ecosystem::app/2df52644-e196-4b38-a9d1-dcb11f50cdb5
+
+
+
+
 permissions:
   scopes:
     - write:jira-work
     - read:jira-work
+  external: 
+    fetch: 
+      backend: 
+      - "https://api.openai.com/v1/engines/davinci/completions"
+      
+      
