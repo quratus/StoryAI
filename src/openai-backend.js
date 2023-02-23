@@ -10,7 +10,7 @@ const { route } = require('@forge/api');
 
 
 const app = express();
-const port = 772;
+const port = process.env.PORT || 3000;
 app.get("/", (req, res) => {
   res.send('Welcome to the OpenAI backend server!');
 });
