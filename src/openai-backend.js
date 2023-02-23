@@ -10,7 +10,7 @@ const { route } = require('@forge/api');
 
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 443;
 app.get("/", (req, res) => {
   res.send('Welcome to the OpenAI backend server!');
 });
@@ -40,7 +40,7 @@ app.post('/generate-text', async (req, res) => {
 
 
 app.listen(port, '0.0.0.0', () => {
-  console.log(`Server running at http://34.175.190.95:${port}/`);
+  console.log(`Server running at https://34.175.190.95:${port}/`);
 });
 
 module.exports = { route: route({app}) };
