@@ -22,7 +22,7 @@ const { summary, description } = responseJson.fields;
 console.log(`Sending fields: summary: "${summary}", description: "${description}"`);
 
   // send the summary and description to the backend
-  const backendResponse = await api.fetch(`http://localhost:3000/generate-text`, {
+  const backendResponse = await api.fetch(`http://34.125.46.243:3000/generate-text`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ summary, description })  
