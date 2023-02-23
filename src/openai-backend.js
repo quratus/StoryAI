@@ -40,7 +40,7 @@ app.post('/generate-text', async (req, res) => {
 
 
 app.listen(port, '0.0.0.0', () => {
-  console.log(`Server running at http://34.125.46.243:${port}/`);
+  console.log(`Server running at http://34.175.190.95:${port}/`);
 });
 
 module.exports = { route: route({app}) };
